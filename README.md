@@ -51,15 +51,15 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 
 ## Step 4: Add MCP Server
 
-1. In your agent, go to **Tools** tab
+1. In your agent, go to the **Toolset** section
 2. Click **Add tool** > **MCP Server**
 
 ![Add Tool](images/watsonx-orchestrate-add-tool.png)
 
 3. Enter server details:
    - **Name**: `KithMCP`
-   - **URL**: `https://your-kith-mcp-server-url.com/sse`
-   - **Transport**: `SSE (Server-Sent Events)`
+   - **URL**: `https://kith.com/api/mcp`
+   - **Transport**: `HTTPS`
    - **Authentication**: None (leave blank)
 4. Click **Connect**
 5. Wait for connection confirmation
@@ -87,7 +87,7 @@ After connecting, you'll see 5 tools available. Enable all of them:
 5. **update_cart**
    - Add/remove/update cart items
 
-Click **Add** for each tool to enable it.
+Click **Add to agent**.
 
 ![MCP Tools Available](images/watsonx-orchestrate-mcp-add-tools.png)
 
