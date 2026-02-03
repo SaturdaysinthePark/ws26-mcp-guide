@@ -27,10 +27,13 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 2. Select **Trial Plan** (free for 30 days)
 3. Choose a region (e.g., Dallas)
 4. Click **Create**
+
+![watsonx Orchestrate Creation](images/watsonx-orchestrate-create.png)
+
 5. Wait for provisioning (1-2 minutes)
 6. Click **Launch watsonx Orchestrate**
 
-![watsonx Orchestrate Creation](images/watsonx-orchestrate-create.png)
+![Launch watsonx Orchestrate](images/watsonx-orchestrate-launch.png)
 
 ---
 
@@ -42,12 +45,17 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 4. Add description: `Shopping assistant for Kith.com streetwear`
 5. Click **Create**
 
+![Create AI Agent](images/watsonx-orchestrate-agent-name.png)
+
 ---
 
 ## Step 4: Add MCP Server
 
 1. In your agent, go to **Tools** tab
 2. Click **Add tool** > **MCP Server**
+
+![Add Tool](images/watsonx-orchestrate-add-tool.png)
+
 3. Enter server details:
    - **Name**: `KithMCP`
    - **URL**: `https://your-kith-mcp-server-url.com/sse`
@@ -55,6 +63,8 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
    - **Authentication**: None (leave blank)
 4. Click **Connect**
 5. Wait for connection confirmation
+
+![Add MCP Server](images/watsonx-orchestrate-add-mcp-server.png)
 
 ---
 
@@ -78,6 +88,8 @@ After connecting, you'll see 5 tools available. Enable all of them:
    - Add/remove/update cart items
 
 Click **Add** for each tool to enable it.
+
+![MCP Tools Available](images/watsonx-orchestrate-mcp-add-tools.png)
 
 ---
 
