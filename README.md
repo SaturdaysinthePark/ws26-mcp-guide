@@ -23,15 +23,14 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 
 ## Step 2: Create watsonx Orchestrate Instance
 
-1. Log into IBM Cloud
-2. Navigate to **Catalog** > **AI / Machine Learning**
-3. Search for "watsonx Orchestrate"
-4. Click on watsonx Orchestrate
-5. Select **Trial Plan** (free)
-6. Choose a region (e.g., Dallas)
-7. Click **Create**
-8. Wait for provisioning (1-2 minutes)
-9. Click **Launch watsonx Orchestrate**
+1. Go to [watsonx Orchestrate in IBM Cloud Catalog](https://cloud.ibm.com/catalog/services/watsonx-orchestrate)
+2. Select **Trial Plan** (free for 30 days)
+3. Choose a region (e.g., Dallas)
+4. Click **Create**
+5. Wait for provisioning (1-2 minutes)
+6. Click **Launch watsonx Orchestrate**
+
+![watsonx Orchestrate Creation](images/watsonx-orchestrate-create.png)
 
 ---
 
