@@ -66,6 +66,11 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 
 ![Add MCP Server](images/watsonx-orchestrate-add-mcp-server.png)
 
+Note: This example is based on Shopify's storefront MCP server. You can read more about [Shopify's MCP server here](https://shopify.dev/docs/apps/build/storefront-mcp). This URL can be swapped for other stores such as:
+- https://flybyjing.com/api/mcp
+- https://www.rhodeskin.com/api/mcp
+
+
 ---
 
 ## Step 5: Add the 5 MCP Tools
@@ -73,19 +78,10 @@ Quick setup guide for creating a Kith.com shopping agent using watsonx Orchestra
 After connecting, you'll see 5 tools available. Enable all of them:
 
 1. **get_product_details**
-   - Look up product by ID with variant options
-
 2. **search_shop_catalog**
-   - Search for products from the store
-
 3. **search_shop_policies_and_faqs**
-   - Get store policies, shipping, returns info
-
 4. **get_cart**
-   - Retrieve current cart contents
-
 5. **update_cart**
-   - Add/remove/update cart items
 
 Click **Add to agent**.
 
@@ -131,7 +127,7 @@ Instead Say:
 
 ## Step 7: Test Your Agent
 
-1. Go to **Preview** tab
+1. While in the agent builder UI, use the **Preview** to conveniently test your agent
 2. Try these test queries:
    - "Show me hoodies"
    - "What's your return policy?"
@@ -143,36 +139,29 @@ Instead Say:
    - Cart operations work smoothly
    - Agent doesn't hallucinate information
 
+4. You can perform wider evaluation by clicking the 3-dot overflow menu next to **Deploy**, and then choosing Evaluate
+
 ---
 
-## Troubleshooting
+## Step 8: Deploy your Agent
 
-**MCP Server won't connect:**
-- Verify the URL is correct and accessible
-- Check that the server is running
-- Ensure SSE transport is selected
+1. While in the agent builder, in the top right corner you can click **Deploy**
+ - Deploying the agent creates a version that can be used in your application, or displayed in the home chat page of watsonx orchestrate
+ - Any changes you make will not affect the deployed agent until you deploy again
+ 2. Turn on monitoring to capture usage and learn more about the agents performance (requires watsonx.gov product too)
 
-**Tools not appearing:**
-- Refresh the page
-- Disconnect and reconnect the MCP server
-- Check server logs for errors
 
-**Agent hallucinating information:**
-- Review instructions emphasize "ONLY use API response data"
-- Add more explicit examples of what NOT to say
-- Test with specific questions about missing data
 
 ---
 
 ## Next Steps
 
-- Customize instructions for your brand voice
-- Add more specific product knowledge
-- Test with real shopping scenarios
-- Share with team for feedback
-
----
-
-**Setup Time**: ~15 minutes  
-**Cost**: Free (trial plan)  
-**Support**: [IBM watsonx Orchestrate Documentation](https://www.ibm.com/docs/en/watsonx/watson-orchestrate)
+- Tweak the agent further
+- For developers: Get started with our [Agent Developer Kit](https://developer.watson-orchestrate.ibm.com/)
+- Build new agents and try other MCP servers:
+  - NYC Subway: `https://subwayinfo.nyc/mcp`
+    - Requires no auth, comes with many tools
+  - Yahoo Finance: 
+    - Use 'Local' when setting up MCP Server (as opposed to Remote)
+    - Install command: `uvx yahoo-finance-server`
+    - Source: https://github.com/AgentX-ai/yahoo-finance-server
